@@ -11,7 +11,7 @@ function App() {
   const [language, setLanguage] = useState({
     code: "en",
     name: "English",
-    flag: "🇬🇧",
+    flag: "https://flagcdn.com/w40/gb.png",
   });
 
   // Theme state (Dark mode requirement)
@@ -31,7 +31,7 @@ function App() {
         <div className="header-top">
           <h1>WikiLens</h1>
           <button className="theme-toggle" onClick={toggleTheme}>
-            {theme === "light" ? "🌙 Dark" : "☀️ Light"}
+            {theme === "light" ? "Dark" : "Light"}
           </button>
         </div>
         <p>Explore Wikipedia with Modern React Widgets</p>

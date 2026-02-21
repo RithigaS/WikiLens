@@ -1,10 +1,5 @@
 import { useEffect } from "react";
 
-/**
- * Custom hook to detect clicks outside a specific element.
- * @param {React.RefObject} ref - The reference to the DOM element.
- * @param {Function} callback - The function to call when clicking outside.
- */
 const useClickOutside = (ref, callback) => {
   useEffect(() => {
     const handleClick = (event) => {
