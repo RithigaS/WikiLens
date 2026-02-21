@@ -1,0 +1,121 @@
+.widget-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+
+.widget-header-flex .widget-title {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.toggle-label input {
+  display: none;
+}
+
+.slider {
+  width: 32px;
+  height: 18px;
+  background-color: var(--border);
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.toggle-label input:checked + .slider {
+  background-color: var(--primary);
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle-label input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.accordion-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.accordion-item.active {
+  border-color: var(--primary);
+  box-shadow: var(--shadow);
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.accordion-header:hover {
+  background-color: var(--bg-body);
+}
+
+.accordion-item.active .accordion-header {
+  color: var(--primary);
+}
+
+.arrow-icon {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotated {
+  transform: rotate(180deg);
+  color: var(--primary);
+}
+
+.accordion-content-wrapper {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-content {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
