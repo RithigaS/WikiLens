@@ -2,7 +2,7 @@
 
 WikiLens is a simple one-page website made with **React**. It has 4 different tools (widgets) on one screen. I built this to learn how React works.
 
-![Project Preview](./screenshot.png)
+![Project Preview](./public/screenshot.png)
 
 ---
 
@@ -31,11 +31,5 @@ WikiLens is a simple one-page website made with **React**. It has 4 different to
 - **Custom Hooks**: I made my own hooks called `useDebounce` and `useLocalStorage`.
 
 ---
-
-## 🚀 How to run it
-
-1. Type `npm install` in your terminal.
-2. Type `npm run dev` to start.
-3. Open `http://localhost:5173` in your browser.
 
 _Made by an Intern learning React!_
